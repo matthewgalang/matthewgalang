@@ -103,7 +103,7 @@ const IndexPage = () => (
 						</ul>
 					</div>
 					<div className="project-links d-flex justify-content-center d-md-block mb-4 mb-md-auto">
-						<button className="btn btn-primary">Code snippet</button>
+						<a href="https://github.com/matthewgalang/matthewgalang/blob/master/src/snippets/m4sclientportal.php" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">Code snippet</button></a>
 						<span className="project-source strikethrough"><FontAwesomeIcon icon={['far', "eye-slash"]}/>Private Source</span>
 					</div>
 				</div>
@@ -136,7 +136,7 @@ const IndexPage = () => (
 						</ul>
 					</div>
 					<div className="project-links d-flex justify-content-center d-md-block mb-5 mb-md-auto">
-						<button className="btn btn-primary">Code snippet</button>
+					<a href="https://github.com/matthewgalang/matthewgalang/blob/master/src/snippets/reviewindexer.py" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">Code snippet</button></a>
 						<span className="project-source strikethrough"><FontAwesomeIcon icon={['far', "eye-slash"]}/>Private Source</span>
 					</div>
 				</div>
@@ -167,8 +167,8 @@ const IndexPage = () => (
 							<li>I only pay for the domain name.</li>
 						</ul>
 					</div>
-					<div className="project-links d-flex justify-content-center d-md-block mb-5 mb-md-auto">
-						<span className="project-source"><FontAwesomeIcon icon={['far', "eye"]}/>Github repo</span>
+					<div className="project-links text-center mb-5 mb-md-auto">
+						<a href="https://github.com/matthewgalang/matthewgalang/" target="_blank" rel="noopener noreferrer"><span className="project-source"><FontAwesomeIcon icon={['far', "eye"]}/>Github repo</span></a>
 					</div>
 				</div>
 				<div className="pl-md-5 col-md-7 col-sm-12 d-flex flex-column">
@@ -189,7 +189,7 @@ const IndexPage = () => (
 				<div className="col-md-5 col-sm-12 d-flex">
 					<div className="project-details">
 						<p className="project-description d-flex justify-content-center d-md-block">And that's only the beginning...</p>
-						<button className="btn btn-primary">view my github</button>
+						<a href="https://github.com/matthewgalang" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">view my github projects</button></a>
 					</div>
 				</div>
 				<div className="pl-md-5 col-md-7 d-none d-md-block">
