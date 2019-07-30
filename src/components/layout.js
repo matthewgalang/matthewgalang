@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
 					{children}
 				</div>
 			</main>
-            <footer className="container myFooter">
+            <footer className="container myFooter text-center text-md-left">
 				<div className="row">
 					<div className="col-md-5 col-sm-12">
 						© {new Date().getFullYear()}, Built with

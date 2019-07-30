@@ -28,7 +28,7 @@ export default class Header extends React.Component {
 					<div className="row">
 						<div className="col-9 col-sm-5">
 							<h1>
-								<Link to="/">
+								<Link to="/#top-home">
 									{this.props.siteTitle}
 								</Link>
 							</h1>
