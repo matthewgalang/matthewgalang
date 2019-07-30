@@ -1,0 +1,193 @@
+.st0{fill:#404040;}
+.st1{fill:#D8A75D;}
+.st2{fill:#C98F38;}
+.st3{fill:#C68200;}
+.st4{fill:#AA3E3E;}
+.st5{fill:#DAD5A8;}
+.st6{fill:#BA4343;}
+.st7{fill:#823232;}
+.st8{fill:#DCDCDC;}
+.st9{fill:none;stroke:#DCDCDC;stroke-width:10;}
+.st10{fill:#6D4117;}
+.st11{fill:#F0ECC4;}
+.st12{fill:#9E9E9E;}
+.st13{fill:#C4C4C4;}
+.st14{fill:#3E7FBB;}
+.st15{fill:#DDE2A3;}
+.st16{fill:#E3BC30;}
+.st17{fill:#262626;}
+.st18{fill:#60C6DC;}
+.st19{fill:#81C5EB;}
+.st20{fill:#1231A3;}
+.st21{fill:#1232A3;}
+.st22{fill:#FFFFFF;}
+
+    .scene {
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        position: relative;
+        border-radius:50%;
+        overflow: hidden;
+        background: #2C66BD;
+    }
+    .scene svg{
+        position: absolute;
+            top: 0;
+            left: 0;  
+        }
+    
+    .vapor1,.vapor2{
+    transition: opacity 20s;
+    fill:rgb(240, 240, 240);
+    opacity:.3;
+    }
+    
+    .vapor1{
+    animation: vaporFloat 4s ease-in-out infinite;
+    }
+    .vapor2{
+    animation: vaporFloat 4s ease infinite;
+    }
+    .vapor1.hide,.vapor2.hide {
+    transition: .25s;
+    opacity:0;
+    }
+    
+    @keyframes vaporFloat {
+    0% {
+        transform:translateY(0px);
+    }
+    50% {
+        transform:translateY(20px);
+    }
+    100% {
+        transform:translateY(0px);
+    }
+    }
+    
+    .blue-pencil {
+    transform-origin: 155px 390px;
+    transform: translateX(-150px) rotate(60deg);
+    transition: transform 1s;
+    }
+    
+    .blue-pencil.show{  
+    transform: translateX(0px) rotate(40deg);
+    }
+    .blue-pencil.hide{
+    transition: .25s;
+    transform: translateX(-150px) rotate(60deg);
+    }
+    
+    .black-pencil, .yellow-pencil {
+    transform: translateX(-100px);
+    transition: transform 1s;
+    }
+    
+    .black-pencil.hide, .yellow-pencil.hide {
+    transition: .5s;
+    }
+    
+    .black-pencil.show, .yellow-pencil.show {
+    transition: .75s;
+    transform: translateX(0px);
+    }
+    
+    .paper {
+    transform: translateX(-314px);
+    transition: transform 1s;
+    }
+    
+    .paper.hide{
+    transition: .25s;
+    }
+    .paper.show{
+    transition: .5s;
+    transform: translateX(0px);
+    }
+    
+    .laptop {
+    transform: translateX(-23px) translateY(-70px);
+    transition: transform 1s;
+    }
+    .laptop.push {
+    transition: .25s;
+    transform: translateX(0px) translateY(0px);
+    }
+    .laptop.show {
+    transition: .5s;
+    transform: translateX(17px) translateY(-150px);
+    }
+    
+    .book {
+    transform: translateX(-33px) translateY(-20px);
+    transition: transform 1s;
+    }
+    
+    .book.push {
+    transition: .25s;
+    transform: translateX(0px) translateY(0px);
+    }
+    
+    .ps4{
+    transform: translateX(360px) translateY(60px);
+    transition: transform 1s;
+    }
+    
+    .ps4.show {
+    transition: .5s;
+    transform: translateX(20px) translateY(60px);
+    }
+    
+    .water{
+    transform: translateX(130px) translateY(70px);
+    transition: transform 1s;
+    }
+    .water.show{
+    transform: translateX(0px) translateY(70px);
+    }
+    .coffee{
+    transition: transform 2.5s;
+    }
+    .coffee.hide{
+    transition: .5s;
+    transform: translateX(120px);
+    }
+    
+    .eyes {
+    transform-origin: 237px 175px;
+    }
+    
+    .eye1,.eye2{
+    transform-origin: 237px 175px; 
+    animation: blink 3s infinite;
+    }
+    .eye1.read, .eye2.read{
+    transform:translateX(0px) translateY(10px);
+    animation: blink-read 3s infinite;
+    }
+    
+    @keyframes read{
+    0%{transform:translateX(0px);}
+    50%{transform:translateX(-10px);}
+    100%{transform:translateX(0px);}
+    }
+    
+    @keyframes blink-read{
+    0%{transform:translateX(0px) translateY(10px);}
+    0%{transform:translateX(0px) translateY(10px) scaleY(1);}
+    0.9%{transform:translateX(0px) translateY(10px) scaleY(1);}
+    1%{transform:translateX(0px) translateY(10px) scaleY(0.1);}
+    6% {transform:translateX(0px) translateY(10px) scaleY(0.1);}
+    6.1% {transform:translateX(0px) translateY(10px) scaleY(1);}
+    50%{transform:translateX(-10px) translateY(10px);}
+    100%{transform:translateX(0px) translateY(10px);}
+    }
+    
+    @keyframes blink{
+    89.9% {transform: scaleY(1)}
+    90% {transform: scaleY(0.1);}
+    95% {transform: scaleY(0.1);}
+    95.1% {transform: scaleY(1);}
+    }
