@@ -189,7 +189,7 @@ const IndexPage = () => (
 				<div className="col-md-5 col-sm-12 d-flex">
 					<div className="project-details">
 						<p className="project-description d-flex justify-content-center d-md-block">And that's only the beginning...</p>
-						<a href="https://github.com/matthewgalang" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">view my github projects</button></a>
+						<a className="d-flex justify-content-center d-md-block" href="https://github.com/matthewgalang" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">view my github projects</button></a>
 					</div>
 				</div>
 				<div className="pl-md-5 col-md-7 d-none d-md-block">

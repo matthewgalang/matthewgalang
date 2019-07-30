@@ -135,7 +135,7 @@ h2 { font-size: 1.875rem;}
 .project-details,.project-graphic{ flex:1 1 100%; }
 .project-details {display: flex; flex-direction: column; justify-content: center;}
 .project-links {line-height:48px;}
-.project-source { vertical-align:middle; text-transform:uppercase;}
+.project-source { white-space:nowrap; text-transform:uppercase;}
 .strikethrough { text-decoration: line-through!important;}
 .project-source svg {margin-right: 10px;}
 .project-stack { line-height: 48px; white-space: nowrap;}
