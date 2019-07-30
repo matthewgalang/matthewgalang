@@ -624,3 +624,4 @@ pre tt:after {
 .myFooter{
   position:relative;
 }
+@import '../../node_modules/@fortawesome/fontawesome-svg-core/styles.css'

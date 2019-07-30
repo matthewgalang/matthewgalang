@@ -21,13 +21,13 @@ import multi from "../images/gifs/multi.gif"
 
 // // Font Awesome Import:
 import "./index.css"
-import fontawesome from '@fortawesome/fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
+
+import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faLongArrowAltUp } from '@fortawesome/free-solid-svg-icons'
 import { faChartBar, faUserCircle, faComment, faEnvelope, faEyeSlash, faEye } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-fontawesome.config.autoAddCss = false
+config.autoAddCss = false
 library.add(fab, faCode, faLongArrowAltUp, faChartBar, faUserCircle, faComment, faEnvelope, faEyeSlash, faEye)
 
 const IndexPage = () => (	
