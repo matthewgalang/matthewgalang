@@ -17,10 +17,16 @@ export default class RandomNumber extends Component {
     }
     render() {
         return(
-            <Odometer 
-            format="d" 
-            duration={20000} 
-            value={ this.state.randomNumber }/>
+            <>
+                { typeof window !== 'undefined' && (
+                        <Odometer 
+                        format="d" 
+                        duration={20000} 
+                        value={ this.state.randomNumber }
+                        />
+                    )
+                }
+            </>
         )
     }
 }

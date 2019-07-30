@@ -1,14 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
 
+// Typing animation:
+import Typist from 'react-typist'
+
 import Layout from "../components/layout"
-import Avatar from "../components/Avatar"
 import SEO from "../components/seo"
-import Efforts from "../components/Efforts"
-import RandomNumber from "../components/RandomNumber"
+import Avatar from "../components/Avatar"
 import ProjectGraphic from "../components/ProjectGraphic"
 import DesEl from "../components/DesEl"
 import GamEl from "../components/GamEl"
+import Efforts from "../components/Efforts"
+import RandomNumber from "../components/RandomNumber"
 
 // Project gifs:
 import portal from "../images/gifs/portal.gif"
@@ -16,10 +19,7 @@ import review from "../images/gifs/review.gif"
 import portfolio from "../images/gifs/portfolio.gif"
 import multi from "../images/gifs/multi.gif"
 
-// Typing animation:
-import Typist from 'react-typist'
-
-// Font Awesome Import:
+// // Font Awesome Import:
 import "./index.css"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
