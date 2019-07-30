@@ -255,6 +255,7 @@ const IndexPage = () => (
 				<div className="pl-md-5 col-md-7 col-sm-12">
 					<p>Have any questions? Want to view my resume? Feel free to send me an email!</p>
 					<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">	
+						<input type="hidden" name="form-name" value="contact" />
 						<div className="form-group">
 							<label htmlFor="contact-name">Name</label>
 							<input name="name" required className="form-control" placeholder="Enter name" id="contact-name" type="name"/>
