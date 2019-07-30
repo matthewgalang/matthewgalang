@@ -119,6 +119,16 @@ h2 { font-size: 1.875rem;}
         margin-top:unset;
         padding-top:63px;
     }
+    #top-home p {
+        margin-top:45px;
+        margin-bottom:55px;
+    }
+    #top-home .sidebar-link{
+        margin-top:40px;
+    }
+    #section {
+        padding-top:75px;
+    }
 }
 
 @media (min-width: 1600px) { /* Balance background border styling */
@@ -155,7 +165,7 @@ h2 { font-size: 1.875rem;}
 .job-titles li{font-size:48px; margin:unset;}
 .milestones li {font-size:24px;}
 
-.job-titles {margin-top:41px;}
+/* .job-titles {margin-top:41px;} */
 .milestones,.efforts {margin-top:40px;}
 
 #contact form label{display:block;}

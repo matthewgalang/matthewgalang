@@ -249,11 +249,11 @@ const IndexPage = () => (
 				</div>
 			</div>
 			<div className="row">
-				<div className="col-md-5 col-sm-12">
+				<div className="d-none d-md-block col-md-5 col-sm-12">
 					<h2>Send me a message!</h2>
 				</div>
 				<div className="pl-md-5 col-md-7 col-sm-12">
-					<p>Have any questions? Want to view my resume? Feel free to send me an email!</p>
+					<p className="pb-3">Have any questions? Want to view my resume? Feel free to send me an email!</p>
 					<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">	
 						<input type="hidden" name="form-name" value="contact" />
 						<div className="form-group">
@@ -278,7 +278,7 @@ const IndexPage = () => (
 							<textarea name="message" rows="4" className="form-control" placeholder="Enter message" id="contact-message" type="text"/>
 						</div>
 						<div data-netlify-recaptcha="true"></div>
-						<button type="submit" className="btn btn-primary">Send</button>
+						<div className="d-flex flex-column d-md-block"><button type="submit" className="btn btn-primary">Send</button></div>
 					</form>
 				</div>
 			</div>
