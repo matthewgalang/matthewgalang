@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
 						{` `}
 						<a className="text-dark" href="https://www.gatsbyjs.org">Gatsby</a>
 						<a className="d-block text-dark" href="https://icons8.com/icon/10232/php">
-							PHP icon by Icons8
+							Icons by Icons8
 						</a>
 					</div>
 				</div>
