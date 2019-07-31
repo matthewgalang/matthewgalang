@@ -254,7 +254,8 @@ const IndexPage = () => (
 				</div>
 				<div className="pl-md-5 col-md-7 col-sm-12">
 					<p className="pb-3">Have any questions? Want to view my resume? Feel free to send me an email!</p>
-					<form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">	
+					<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+						<input type="hidden" name="bot-field" />	
 						<input type="hidden" name="form-name" value="contact" />
 						<div className="form-group">
 							<label htmlFor="contact-name">Name</label>
@@ -277,7 +278,6 @@ const IndexPage = () => (
 							<label htmlFor="contact-message">Message</label>
 							<textarea name="message" rows="4" className="form-control" placeholder="Enter message" id="contact-message" type="text"/>
 						</div>
-						<div data-netlify-recaptcha="true"></div>
 						<div className="d-flex flex-column d-md-block"><button type="submit" className="btn btn-primary">Send</button></div>
 					</form>
 				</div>
