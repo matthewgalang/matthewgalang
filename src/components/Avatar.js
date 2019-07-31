@@ -16,8 +16,8 @@ export default class Avatar extends Component {
         document.onmousemove = function(event){
             var middlex = (document.querySelector(".scene").getBoundingClientRect().left + document.querySelector(".scene").getBoundingClientRect().right)/2;
             var middley = (document.querySelector(".scene").getBoundingClientRect().top + document.querySelector(".scene").getBoundingClientRect().bottom)/2;
-            var x = ((event.screenX - middlex) * 10 / window.innerWidth) + "px";
-            var y = ((event.screenY - middley) * 10 / window.innerHeight) + "px"; 
+            var x = ((event.clientX - middlex) * 10 / window.innerWidth) + "px";
+            var y = ((event.clientY - middley) * 10 / window.innerHeight) + "px"; 
             document.getElementById("eyes").style.transform = "translateX("+x+") translateY("+y+")";
             }
         function pushElse(toPush) {
