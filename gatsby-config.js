@@ -15,6 +15,7 @@ module.exports = {
 		title: `Matthew Galang`,
 		description: `Simple & responsive layout for all things related to the work and craft of Matthew Galang.`,
 		author: `@MatthewAGalang`,
+		siteUrl: `https://www.matthewgalang.com`,
 	},
 	plugins: [
 		`gatsby-plugin-react-helmet`,
@@ -27,6 +28,7 @@ module.exports = {
 		},
 		`gatsby-transformer-sharp`,
 		`gatsby-plugin-sharp`,
+		`gatsby-plugin-sitemap`,
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
