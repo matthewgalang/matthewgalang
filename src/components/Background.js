@@ -24,6 +24,10 @@ export default class Background extends Component {
             {
                 section:'experience',
                 color: 'yellow',
+            },
+            {
+                section:'contact',
+                color: 'yellow',
             }
         ],
         currentColor : 'blue'
