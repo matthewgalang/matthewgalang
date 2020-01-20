@@ -176,7 +176,7 @@ h2 { font-size: 1.875rem;}
 /* #contact form select option:first-child {color:#BCBCBC;} */
 #contact form ::placeholder {text-transform:uppercase; color:#BCBCBC;}
 
-.social-icons {margin:40px 0px;}
+.social-icons {margin-top:40px; margin-bottom:40px;}
 .social-icons h2 {line-height:72px;}
 .social-icons a {font-size:48px; color:unset; margin-right:15px;}
 

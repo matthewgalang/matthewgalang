@@ -104,7 +104,7 @@ export default class Efforts extends Component {
     }
     textForEfforts(title){
         if(title === 'stackoverflow.com'){
-            return 'visits to stackoverflow this past year';
+            return 'visits to stackoverflow the past 90 days on Chrome';
         } else if (title === 'codeLinesCount') {
             return 'lines of code churned across git repos';
         } else if (title === 'coffeeCupsCount') {
