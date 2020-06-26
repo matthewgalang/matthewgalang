@@ -45,7 +45,7 @@ const IndexPage = () => (
 						<DesEl wait={1500}/>
                         <GamEl wait={2000}/>
                     </h1>
-                    <p>Web apps by day,<br></br> leaderboards by night.</p>
+                    <p>Web apps by day,<br></br> web shooter by night.</p>
                     <div className="d-flex justify-content-center d-md-block"><Link to="/#top-projects"><button className="btn btn-primary blue">View Projects</button></Link></div>
 					<div className="d-flex justify-content-center d-md-block"><Link to="/#about-me"><span className="sidebar-link">Learn More</span></Link></div>
                 </div>
@@ -66,7 +66,7 @@ const IndexPage = () => (
                 </div>
                 <div className="pl-md-5 col-md-7 col-sm-12 blue">
                     <p>
-                        I’m currently a web developer for Marketing4Storage and
+                        I’m currently the lead developer at Marketing4Storage and
                         spend a lot of time learning through projects and
                         research. I’ve been working on serverless APIs,
                         Gatsby.js builds, Netlify deployments, CSS animations,
@@ -92,18 +92,18 @@ const IndexPage = () => (
 			<div className="row project">
 				<div className="col-md-5 col-sm-12 d-flex flex-column">
 					<div className="project-details">
-						<h2>M4S Client Portal</h2>
-						<p className="project-status">In development</p>
+						<h2>4Sight</h2>
+						<p className="project-status">Post-production</p>
 						<p className="project-description">Web app that enables customers to monitor their brand rankings, reviews, and analytics data.</p>
 						<ul>
-							<li>Designed layout on Figma</li>
-							<li>Built front-end on Bootstrap 3 and Bootstrap 4</li>
-							<li>Version control with Git and FTP</li>
+							<li>Deployed account and subscription sign-up system for in-house admins and potential client users</li>
+							<li>Built analytics dashboard that enabled users to analyze data trends for their reputation campaigns</li>
+							<li>Spearheaded a feature to display customer ratings on websites as part of 4Sight</li>
 							<li>Applied agile practices to push development team toward production</li>
 						</ul>
 					</div>
 					<div className="project-links d-flex justify-content-center d-md-block mb-4 mb-md-auto">
-						<a href="https://github.com/matthewgalang/matthewgalang/blob/master/src/snippets/m4sclientportal.php" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">Code snippet</button></a>
+						<a href="https://4sight.marketing4storage.com" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">Open App</button></a>
 						<span className="project-source strikethrough"><FontAwesomeIcon icon={['far', "eye-slash"]}/>Private Source</span>
 					</div>
 				</div>
@@ -126,7 +126,7 @@ const IndexPage = () => (
 				<div className="col-md-5 col-sm-12 d-flex flex-column">
 					<div className="project-details">
 						<h2>Review Indexer</h2>
-						<p className="project-status">In Production</p>
+						<p className="project-status">in Production | On Hold</p>
 						<p className="project-description">Internet bot scheduled to index customer reviews for multiple businesses.</p>
 						<ul>
 							<li>Built on scrapy and selenium with proxy middleware</li>
@@ -136,7 +136,7 @@ const IndexPage = () => (
 						</ul>
 					</div>
 					<div className="project-links d-flex justify-content-center d-md-block mb-5 mb-md-auto">
-					<a href="https://github.com/matthewgalang/matthewgalang/blob/master/src/snippets/reviewindexer.py" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">Code snippet</button></a>
+					{/* <a href="https://github.com/matthewgalang/matthewgalang/blob/master/src/snippets/reviewindexer.py" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary">Code snippet</button></a> */}
 						<span className="project-source strikethrough"><FontAwesomeIcon icon={['far', "eye-slash"]}/>Private Source</span>
 					</div>
 				</div>
@@ -212,9 +212,9 @@ const IndexPage = () => (
 				</div>
 				<div className="pl-md-5 col-md-7 col-sm-12">
 					<ul>
+						<li>Lead Developer</li>
 						<li>Web Developer</li>
 						<li>SEO Strategist</li>
-						<li>Office Assistant</li>
 					</ul>
 				</div>
 			</div>
@@ -235,9 +235,10 @@ const IndexPage = () => (
 						<li><span className="effortCount">2002</span> - Wrote first HTML page on neopets</li>
 						<li><span className="effortCount">2006</span> - Made blogs on freewebs, xanga, myspace</li>
 						<li><span className="effortCount">2013</span> - Built mgakapatid.org on ZURB foundation</li>
-						<li><span className="effortCount">2018</span> - Received “developer” as job title</li>
+						<li><span className="effortCount">2018</span> - Received “developer” job title</li>
 						<li><span className="effortCount">2019</span> - Built this website</li>
-						<li><span className="effortCount"><RandomNumber initial={2019} min={2020} max={2111}/></span> - ???</li>
+						<li><span className="effortCount">2019</span> - Became Lead Developer</li>
+						<li><span className="effortCount"><RandomNumber initial={2020} min={2021} max={2111}/></span> - ???</li>
 					</ul>
 				</div>
 			</div>

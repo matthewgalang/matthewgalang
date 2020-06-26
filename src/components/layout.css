@@ -624,5 +624,6 @@ pre tt:after {
 .myFooter{
   position:relative;
   padding-bottom:50px;
+  font-size:12px;
 }
 @import '../../node_modules/@fortawesome/fontawesome-svg-core/styles.css'
