@@ -6,9 +6,9 @@ import Project from '../components/Project'
 export default function Home({projects}) {
   return (
     <div className={styles.container}>
-        {/* {projects.map(project => (
-          <Project key={project.date} props={project}/>
-        ))} */}
+        {projects.map(project => (
+          <Project key={project.date} {...project}/>
+        ))}
     </div>
   )
 }
@@ -16,7 +16,7 @@ export default function Home({projects}) {
 export async function getStaticProps() {
   const res = await fetchEntries()
   const projects = await res.map(p => p.fields)
-  console.log(projects);
+  console.log(projects)
   return {
     props: {
       projects
