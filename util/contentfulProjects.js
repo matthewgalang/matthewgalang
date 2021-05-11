@@ -8,7 +8,8 @@ const client = require('contentful').createClient({
 
 export async function fetchEntries() {
     const entries = await client.getEntries({
-        'content_type': 'project'
+        'content_type': 'project',
+        'order': '-fields.date',
     })
 
     if(entries.items) return entries.items
@@ -16,4 +17,12 @@ export async function fetchEntries() {
     console.log(`Error getting Entries for ${contentType.name}.`)
 }
 
-export default { fetchEntries }
+export async function fetchEntry(id) {
+    const entry = await client.getEntry(id)
+    console.log(`found entry ${entry}`)
+    if (entry.fields) return entry
+
+    console.log(`Error getting entry for ${entry.name}`)
+}
+
+export default { fetchEntries, fetchEntry }
