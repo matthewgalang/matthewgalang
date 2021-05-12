@@ -19,10 +19,13 @@ export async function fetchEntries() {
 
 export async function fetchEntry(id) {
     const entry = await client.getEntry(id)
-    console.log(`found entry ${entry}`)
     if (entry.fields) return entry
 
     console.log(`Error getting entry for ${entry.name}`)
 }
 
-export default { fetchEntries, fetchEntry }
+export async function fetchAsset(id) {
+    const asset = await client.getAsset(id)
+    return asset
+}
+export default { fetchEntries, fetchEntry, fetchAsset }

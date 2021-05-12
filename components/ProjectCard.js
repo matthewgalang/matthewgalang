@@ -7,7 +7,7 @@ function ProjectCard({ title, summary, date, image, responsibilities, features, 
             <div className="flex flex-row justify-between">
                 <div className="font-semibold">{title}</div>
 
-                <div class="font-bold pl-4">{dateObj.getFullYear()}</div>
+                <div className="font-bold pl-4">{dateObj.getFullYear()}</div>
             </div>
         </div>
     )

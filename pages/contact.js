@@ -18,6 +18,10 @@ export default function Contact() {
                         <a className="text-blue-800 font-medium hover:text-blue-700" href="mailto:galang.matthew@gmail.com">galang.matthew@gmail.com</a>
                     </div>
                     <div className="flex justify-between">
+                        <div>GitHub:</div>
+                        <a className="text-blue-800 font-medium hover:text-blue-700" href="https://github.com/matthewgalang" target="_blank" rel="noreferrer">matthewgalang</a>
+                    </div>
+                    <div className="flex justify-between">
                         <div>LinkedIn:</div>
                         <a className="text-blue-800 font-medium hover:text-blue-700" href="https://www.linkedin.com/in/matthew-galang/" target="_blank" rel="noreferrer">matthew-galang</a>
                     </div>

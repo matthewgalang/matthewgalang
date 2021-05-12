@@ -21,9 +21,9 @@ export default function Home({ projects, heroComponent }) {
           {projects.map((project, count) => {
             if (count < 4) {
               return (
-                <Link href={`/project/${project.id}/${project.title.replace(/\s+/g, '-').toLowerCase()}`}>
+                <Link key={project.id} href={`/project/${project.id}/${project.title.replace(/\s+/g, '-').toLowerCase()}`}>
                   <a className="cursor-pointer">
-                    <ProjectCard key={project.date} {...project} />
+                    <ProjectCard {...project} />
                   </a>
                 </Link>
               )
